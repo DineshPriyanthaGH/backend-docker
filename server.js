@@ -11,7 +11,7 @@ app.get("/posts", async (req, res) => { // Goto http://localhost:5000/posts
     const posts = await response.json();
     res.json(posts);
   } catch (error) {
-    console.error("Failed to fetch posts:", error);
+    console.error("Failed to fetch postsgg:", error);
     res.status(500).json({ error: "Unable to retrieve posts" });
   }
 });
